@@ -817,7 +817,7 @@ section:nth-child(odd) .animate.scroll,
   
   @media only screen and (max-width: 500px) {
     .responsive {
-      width: 95%; 
+      width: 90%; 
     }
   }
   
