@@ -168,7 +168,7 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 18rem;
     height: 100%;
     background: var(--main-color);
     border: .2rem solid var(--main-color);
@@ -218,7 +218,7 @@ section {
 .home-sci {
     position: fixed;
     bottom: 2rem;
-    right: 1px;
+    left: 1px;
     display: flex;
     flex-wrap : wrap; 
     align-items: left;
