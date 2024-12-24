@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family:cursive;
 }
 
 :root {
@@ -96,7 +96,7 @@ section {
 }
 
 .home-content {
-    max-width: 60rem;
+    max-width: 70rem;
     z-index: 99;
 }
 
@@ -118,8 +118,8 @@ section {
 }
 
 .home-content .text-animate h3 {
-    font-size: 3.05rem;
-    font-weight: 700;
+    font-size: 3.0rem;
+    font-weight: 600;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
@@ -216,11 +216,14 @@ section {
 }
 
 .home-sci {
-    position: absolute;
-    bottom: 4rem;
-    width: 170px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap : wrap; 
+    align-items: left;
+    gap: 10px; 
+    width: 30px;
 }
 
 .home-sci a {
@@ -228,16 +231,15 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 30px;
     background: transparent;
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 20px;
     color: var(--main-color);
-    z-index: 1;
+    z-index: 1000;
     overflow: hidden;
-    transition: .5s;
 }
 
 .home-sci a:hover {
@@ -246,7 +248,7 @@ section {
 
 .home-sci a::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 0;
@@ -274,14 +276,13 @@ section {
     background: var(--bg-color);
     opacity: .8;
 }
-
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding-bottom: 6rem;
 }
 
@@ -339,7 +340,7 @@ span {
 .about-content p {
     position: relative;
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 3rem 0 3rem;
 }
 
 .btn-box.btns {
@@ -352,6 +353,7 @@ span {
 }
 
 .education {
+    margin:20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,7 +471,7 @@ span {
 
 .contact form .input-box .input-field {
     position: relative;
-    width: 49%;
+    width: 46%;
     margin: .8rem 0;
 }
 
@@ -529,7 +531,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text,
@@ -647,8 +649,8 @@ section:nth-child(odd) .animate.scroll,
 }
 .tech-item {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -691,8 +693,8 @@ section:nth-child(odd) .animate.scroll,
     #tech-stack-container{
         margin-left: 10%;
     }    .tech-item {
-        width: 150px; 
-        height: 150px; 
+        width: 70px; 
+        height: 70px; 
     }
 
     .tech-item::before {
@@ -731,12 +733,13 @@ section:nth-child(odd) .animate.scroll,
     justify-items: center; 
     align-items: center;   
     position: relative;
-    height: 50vh; 
+    height: 50vh;
+    padding: 40px; 
 }
 
 .github-stats img {
-    width: 80%; 
-    height: 80%;
+    width: 97%; 
+    height: 90%;
     object-fit: cover; 
     box-shadow: 0 4px 10px var(--bg-color);
     border-radius: 0; 
@@ -814,7 +817,7 @@ section:nth-child(odd) .animate.scroll,
   
   @media only screen and (max-width: 500px) {
     .responsive {
-      width: 100%; 
+      width: 95%; 
     }
   }
   
@@ -974,15 +977,6 @@ section:nth-child(odd) .animate.scroll,
         display: flex;
         flex-direction: column;
     }
-
-    .home-sci {
-        width: 160px;
-    }
-
-    .home-sci a {
-        width: 38px;
-        height: 38px;
-    }
 }
 
 @media (max-width: 462px) {
@@ -991,11 +985,11 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .education {
-        padding: 10rem 4% 5rem 5%;
+        padding: 9rem 4% 5rem 5%;
     }
 
     .contact form .input-box .input-field {
-        width: 100%;
+        width: 99%;
     }
 
     .footer {
